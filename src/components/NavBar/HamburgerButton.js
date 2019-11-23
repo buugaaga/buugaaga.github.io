@@ -22,15 +22,19 @@ const MenuButton = styled.button`
     outline: 0; 
   }
   :hover {
-    span:nth-of-type(1) {
-      width: 33px;
+    @media (pointer: fine) {
+      span:nth-of-type(1) {
+        width: 33px;
+      }
+      span:nth-of-type(2) {
+        width: 40px;
+      }
+      span:nth-of-type(3) {
+        width: 30px; 
+      }
     }
-    span:nth-of-type(2) {
-      width: 40px;
-    }
-    span:nth-of-type(3) {
-      width: 30px; 
-    }
+  }
+  
   }
   &.active {
     span:nth-of-type(1) {
@@ -64,6 +68,7 @@ const HamburgerButton = () => {
     <MenuButton 
       className={ isMenuOpen ? 'active' : '' }
       aria-label="Открыть главное меню"
+      aria-haspopup={true}
       onClick={ clickHandler }
     >
       <Bar />
