@@ -11,6 +11,7 @@ export function Main() {
   return (
     <div>
       <NavState>
+        bububub
         <HamburgerButton />
         <NavBar />
       </NavState>
