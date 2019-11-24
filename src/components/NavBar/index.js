@@ -7,9 +7,10 @@ function NavBar() {
   const { isMenuOpen } = useContext(MenuContext);
   return (
     <>
-      
       <Collapse in={isMenuOpen}>
-        <div>hi</div>
+        <ul>
+          <li>bu</li>
+        </ul>
       </Collapse>
     </>
   )
