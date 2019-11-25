@@ -7,25 +7,24 @@ import father from '../../images/father.svg';
 
 function Face() {
   return (
-    <SContainer>
-      <Row >
-        <Col xs={12}>
+    <Container>
+      <SRow className="">
+        <Col xs={12} className="align-self-center">
           <StyledText>
             <p>Ильдар Насыров</p>
           </StyledText>
         </Col>
-      </Row>
-      <Row justify-content-center>
-        <Col>
+      
+        <Col xs={{ span: 12, offset: 4 }} className="" >
           <Image src={father} style={{width: 200}}roundedCircle fluid></Image>
         </Col>
-      </Row>
-    </SContainer>
+      </SRow>
+    </Container>
   )
 }
 
 
-const SContainer = styled(Container)`
+const SRow = styled(Row)`
   height: 100vh;
 `;
 const StyledText = styled.h3`
