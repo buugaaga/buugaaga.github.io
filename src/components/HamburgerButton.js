@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
 
-import { MenuContext } from '../../context/navState';
+import { MenuContext } from '../context/navState';
 
 const MenuButton = styled.button`
+  position: absolute;
   display: block;
   transform-origin: 16px 11px;
   float: left;
@@ -35,7 +36,7 @@ const MenuButton = styled.button`
     }
   }
   
-  }
+  
   &.active {
     span:nth-of-type(1) {
       transform: rotate(45deg) translate(10px, 10px);
@@ -50,6 +51,7 @@ const MenuButton = styled.button`
     }
   }
 `;
+
 const Bar = styled.span`
   display: block;
   width: 40px;

@@ -4,7 +4,7 @@ import React from 'react';
 
 import { NavBar } from '../NavBar';
 import { NavState } from '../../context/navState';
-import { HamburgerButton } from '../NavBar/HamburgerButton';
+import { HamburgerButton } from '../HamburgerButton';
 import { Header } from '../Header';
 import { Face } from '../Face';
 
@@ -14,8 +14,9 @@ export function Main() {
     <>
       <nav>
         <NavState>
-          <HamburgerButton />
           <NavBar />
+          <HamburgerButton />
+          
         </NavState>
         
       </nav>
