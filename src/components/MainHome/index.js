@@ -5,7 +5,7 @@ import React from 'react';
 // import { NavBar } from '../NavBar';
 // import { NavState } from '../../context/navState';
 // import { HamburgerButton } from '../HamburgerButton';
-import { Header } from '../Header';
+import { Header } from '../HeaderHome';
 import { Face } from '../Face';
 
 function Main() {

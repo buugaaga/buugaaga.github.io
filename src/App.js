@@ -21,15 +21,12 @@ class App extends React.Component {
         <NavBar />
       </NavState>
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/works">
-          <Works />
-        </Route>
-        <Route path="/contacts">
-          <Contacts />
-        </Route>
+        <Route exact path="/" component={Home} />
+          
+        <Route path="/works" component={Works} />
+          
+        <Route path="/contacts" component={Contacts} />
+          
       </Switch>
     </>
     );

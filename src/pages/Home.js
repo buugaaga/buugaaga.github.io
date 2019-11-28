@@ -1,11 +1,11 @@
 import React from 'react'
 
-import { Main } from '../components/Main';
+import { Main } from '../components/MainHome';
 
 export function Home() {
   return (
-    <div>
+    
       <Main />
-    </div>
+    
   )
 }

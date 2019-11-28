@@ -7,8 +7,8 @@ const MenuButton = styled.button`
   position: absolute;
   
   transform-origin: 16px 11px;
-  float: left;
-  margin-right: 29px;
+  
+  
   outline: 0;
   border: 0;
   padding: 12px;
