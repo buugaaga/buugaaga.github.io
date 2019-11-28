@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const StyledText = color => styled.h3`
   display: block;
-  margin-left: -15px;
   font-size: 30px;
   font-family:BlinkMacSystemFont;
   text-align: center;

@@ -5,7 +5,7 @@ import { MenuContext } from '../context/navState';
 
 const MenuButton = styled.button`
   position: absolute;
-  display: block;
+  
   transform-origin: 16px 11px;
   float: left;
   margin-right: 29px;

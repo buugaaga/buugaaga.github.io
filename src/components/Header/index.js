@@ -7,6 +7,7 @@ import Ural from '../../images/nature.png';
 
 const StyledTextFunc = StyledText("white");
 const StyledContainer = styled(Container)`
+  
   background-image: url(${Ural});
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,7 +19,7 @@ const StyledRow = styled(Row)`
 function Header() {
   return (
     <>
-      <StyledContainer fluid>
+      <StyledContainer fluid md={12}>
         <StyledRow className="align-items-center  ">
           <Col >
             <StyledTextFunc><p>Ильдар Насыров</p></StyledTextFunc>
