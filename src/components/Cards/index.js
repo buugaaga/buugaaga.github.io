@@ -1,27 +1,33 @@
 import React from 'react'
 import styled from 'styled-components';
 
-import { ImageOfCards } from '../ImageOfCards';
+import { ImageOfCards } from './ImageOfCards';
+import { HeaderTitle } from './HeaderTitle';
+import { CardOfProject } from './CardOfProject';
+import { Description } from './Description';
 
 
-const StyledCards = styled.div`
+const WrapperOfCards = styled.div`
   display: flex;
-  margin: 20px;
-  padding: 20px 40px;
-  background-color: rgba(20, 20, 20, 0.5);
-  border-radius: 10px;
+  flex-direction: column;
+  flex: wrap;
 `;
 
 function Cards({ props }) {
   console.log(props[0].urlOfImage)
   return (
-    <div>
+    <WrapperOfCards>
+      <HeaderTitle>
+        <h2>Title of cards</h2>
+      </HeaderTitle>
       {props.map( (obj, i) => (
-        <StyledCards key={i}>
-          <ImageOfCards src={obj.urlOfImage} />
-        </StyledCards>
-      ))}
-    </div>
+        <CardOfProject key={i}>
+          <ImageOfCards props={obj} />
+          <Description props={obj} />        
+        </CardOfProject>
+      )).reverse()}
+
+    </WrapperOfCards>
   )
 }
 

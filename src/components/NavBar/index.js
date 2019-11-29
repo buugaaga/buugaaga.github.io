@@ -39,13 +39,13 @@ export function NavBar() {
       <Collapse in={isMenuOpen}>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Домашняя страница</Link>
           </li>
           <li>
-            <Link to="/works">Works</Link>
+            <Link to="/works">Мои работы</Link>
           </li>
           <li>
-            <Link to="/contacts">Contacts</Link>
+            <Link to="/contacts">Связаться со мной</Link>
           </li>
         </ul>
       </Collapse>
