@@ -4,11 +4,18 @@ import React from 'react';
  
 
 const StyledImageOfCards = styled.div`
-  width: 300px;
-  flex-shrink: 0;
-  box-shadow: 0 0 5px 5px #eee;
+  margin-left: 50px;
+  max-width: 300px;
+  flex-basis: 500px;
+  
+  @media (max-width: 780px){
+    margin: 10px;
+    align-self: center;
+    flex-basis: auto;
+  }
   img {
     width: 100%;
+    box-shadow: 0 0 5px 5px #eee;
   }
 `;
 

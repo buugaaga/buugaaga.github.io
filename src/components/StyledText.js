@@ -26,7 +26,7 @@ const StyledText = color => styled.h3`
     background-color: ${color};
     display: inline-block;
     margin: 10px 10px;
-    line-height: 50px;
+    line-height: 3 0px;
   }
 `;
 

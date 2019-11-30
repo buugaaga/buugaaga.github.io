@@ -5,10 +5,14 @@ import styled from 'styled-components';
 
 import { MenuContext } from '../../context/navState';
 import { useOnClickOutside } from '../../hooks/useOnClickOutside';
-import { HamburgerButton } from '../HamburgerButton';
+import { HamburgerButton } from './HamburgerButton';
 
 const StyledNav = styled.nav`
-  margin-left: 40px;
+  position: absolute;
+  padding-left: 40px;
+  background-color: white;
+  width: 100%;
+  z-index: 9999;
   button {
     margin-left: -40px;
   }

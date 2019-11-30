@@ -20,8 +20,8 @@ function Face() {
             <p>Ильдар Насыров</p>
           </StyledTextFunc>
         </Col>
-        <Col xs={6} className="align-self-center" >
-          <Image src={father} style={{width: 200}}roundedCircle className="d-block mx-auto"></Image>
+        <Col xs={7} md={3} lg={3} className="align-self-center" >
+          <Image src={father}  className="d-block mx-auto img-fluid rounded-circle"></Image>
         </Col>
       </SRow>
     </Container>

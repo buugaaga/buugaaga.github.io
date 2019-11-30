@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
 
-import { MenuContext } from '../context/navState';
+import { MenuContext } from '../../context/navState';
 
 const MenuButton = styled.button`
   position: absolute;
@@ -24,6 +24,9 @@ const MenuButton = styled.button`
   }
   :hover {
     @media (pointer: fine) {
+      span {
+        background-color: lightblue;
+      }
       span:nth-of-type(1) {
         width: 33px;
       }
@@ -57,7 +60,7 @@ const Bar = styled.span`
   width: 40px;
   height: 5px;
   margin-bottom: 7px;
-  background-color: #ddd;
+  background-color: blue;
 `;
 
 const HamburgerButton = () => {

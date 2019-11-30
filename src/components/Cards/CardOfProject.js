@@ -2,10 +2,15 @@ import styled from 'styled-components';
 
 export const CardOfProject = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 20px;
-  background-color: #ddd;
-  @media (max-width: 700px) {
+  
+  @media (max-width: 780px) {
     flex-direction: column;
+    
+    align-content: center;
+  }
+  @media (min-width: 900px) {
+    justify-content: space-between;
   }
 `;
