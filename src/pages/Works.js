@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-import { Cards } from "../components/Cards";
-import { dataOfProjects as data } from '../components/Cards/dataOfProjects';
+import { CardsWorks } from "../components/CardsWorks";
+import { dataOfProjects as data } from '../components/CardsWorks/dataOfProjects';
 
 
 export class Works extends Component {
@@ -10,7 +10,7 @@ export class Works extends Component {
     this.state = {data};
   }
   render() {
-    return <Cards props={this.state.data}/>
+    return <CardsWorks props={this.state.data}/>
   }
 }
 

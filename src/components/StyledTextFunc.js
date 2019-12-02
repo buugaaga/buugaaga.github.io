@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-const StyledText = color => styled.h3`
+const StyledTextFunc = color => styled.h3`
   display: block;
+  margin-top: 30px;
   font-size: 30px;
   font-family:BlinkMacSystemFont;
   text-align: center;
@@ -18,6 +19,9 @@ const StyledText = color => styled.h3`
     display: inline-block;
     margin: 10px 10px;
     line-height: 50px;
+    @media (max-width: 450px) {
+      display: none;
+    }
   };
   ::after {
     content: " ";
@@ -27,7 +31,10 @@ const StyledText = color => styled.h3`
     display: inline-block;
     margin: 10px 10px;
     line-height: 3 0px;
+    @media (max-width: 450px) {
+      margin: 10px 70px;
+    }
   }
 `;
 
-export { StyledText };
+export { StyledTextFunc };

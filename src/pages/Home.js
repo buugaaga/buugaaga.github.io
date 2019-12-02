@@ -1,11 +1,15 @@
 import React from 'react'
 
-import { Main } from '../components/MainHome';
+import { Header } from '../components/HeaderHome';
+import { Face } from '../components/FaceHome';
+import { Education } from '../components/EducationHome';
 
 export function Home() {
   return (
-    
-      <Main />
-    
+    <>
+      <Header />
+      <Face />
+      <Education />
+    </>
   )
 }

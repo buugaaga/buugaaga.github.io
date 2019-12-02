@@ -13,7 +13,7 @@ const WrapperOfCards = styled.div`
   flex: wrap;
 `;
 
-function Cards({ props }) {
+function CardsWorks({ props }) {
   console.log(props[0].urlOfImage)
   return (
     <WrapperOfCards>
@@ -31,4 +31,4 @@ function Cards({ props }) {
   )
 }
 
-export { Cards };
+export { CardsWorks }
