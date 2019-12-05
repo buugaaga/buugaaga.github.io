@@ -5,10 +5,7 @@ import { MenuContext } from '../../context/navState';
 
 const MenuButton = styled.button`
   position: absolute;
-  
   transform-origin: 16px 11px;
-  
-  
   outline: 0;
   border: 0;
   padding: 12px;
@@ -42,23 +39,23 @@ const MenuButton = styled.button`
   
   &.active {
     span:nth-of-type(1) {
-      transform: rotate(45deg) translate(10px, 10px);
-      width: 40px; 
+      transform: rotate(45deg) translate(10px, 7px);
+      width: 30px; 
     }
     span:nth-of-type(2) {
       opacity: 0;
       pointer-events: none; 
     }
     span:nth-of-type(3) {
-      transform: rotate(-45deg) translate(7px, -7px);
+      transform: rotate(-45deg) translate(7px, -5px);
     }
   }
 `;
 
 const Bar = styled.span`
   display: block;
-  width: 40px;
-  height: 5px;
+  width: 30px;
+  height: 3px;
   margin-bottom: 7px;
   background-color: blue;
 `;

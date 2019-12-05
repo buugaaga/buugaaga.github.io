@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { MenuContext } from '../../context/navState';
 import { useOnClickOutside } from '../../hooks/useOnClickOutside';
 import { HamburgerButton } from './HamburgerButton';
+import { LinksLogo } from './LinksLogo';
 
 const StyledNav = styled.nav`
   
@@ -42,17 +43,18 @@ export function NavBar() {
       <HamburgerButton />
       <Collapse in={isMenuOpen}>
         <div>
-        <ul>
-          <li>
-            <Link to="/">Домашняя страница</Link>
-          </li>
-          <li>
-            <Link to="/works">Мои работы</Link>
-          </li>
-          <li>
-            <Link to="/contacts">Связаться со мной</Link>
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <Link to="/">Домашняя страница</Link>
+            </li>
+            <li>
+              <Link to="/works">Мои работы</Link>
+            </li>
+            <li>
+              <Link to="/contacts">Связаться со мной</Link>
+            </li>
+          </ul>
+          <LinksLogo />
         </div>
       </Collapse>
     </StyledNav>

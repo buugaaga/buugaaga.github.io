@@ -1,10 +1,10 @@
 import React from 'react';
 
+import { DataOfContacts } from '../components/DataOfContacts';
+
 export function Contacts() {
 
   return (
-    <div>
-      <h2> Contacts page</h2>
-    </div>
+    <DataOfContacts />
   )
 }

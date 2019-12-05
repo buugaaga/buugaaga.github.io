@@ -26,9 +26,12 @@ export function ImageOfEducationFunc(url, alt) {
     let handler = () => {
       elem.classList.remove("show");
       document.removeEventListener("click", handler)
+      document.removeEventListener("scroll", handler)
+      console.log("pup")
     }
     if (elem.tagName === "IMG" && !elem.classList.contains("show")) {
       document.addEventListener("click", handler)
+      document.addEventListener("scroll", handler)
       elem.classList.add("show")
       return ;
     };
