@@ -8,7 +8,7 @@ import { useOnClickOutside } from '../../hooks/useOnClickOutside';
 import { HamburgerButton } from './HamburgerButton';
 
 const StyledNav = styled.nav`
-  position: absolute;
+  
   padding-left: 40px;
   background-color: white;
   width: 100%;
@@ -41,6 +41,7 @@ export function NavBar() {
     <StyledNav ref={node}>
       <HamburgerButton />
       <Collapse in={isMenuOpen}>
+        <div>
         <ul>
           <li>
             <Link to="/">Домашняя страница</Link>
@@ -52,6 +53,7 @@ export function NavBar() {
             <Link to="/contacts">Связаться со мной</Link>
           </li>
         </ul>
+        </div>
       </Collapse>
     </StyledNav>
   )

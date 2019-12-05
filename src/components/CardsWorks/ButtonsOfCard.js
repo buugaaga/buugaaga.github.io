@@ -4,8 +4,8 @@ import { Button, ButtonToolbar } from 'react-bootstrap';
 
 export const ButtonsOfCard = ({props}) => (
   <ButtonToolbar className="justify-self-end justify-content-around">
-    <Button href={props.urlOfCode} variant="outline-success">смотреть код</Button>
-    <Button href={props.urlOfDemo} variant="outline-success">смотреть демо</Button>
+    <Button as="a" href={props.urlOfCode} variant="outline-success" className="mt-2" >смотреть код на github</Button>
+    <Button href={props.urlOfDemo} variant="outline-success" className="mt-2" >смотреть демо</Button>
   </ButtonToolbar>
 
 )

@@ -10,7 +10,11 @@ const StyledImage = styled.div`
     position: absolute;
     top: -200px;
     width: 700px;
-    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.3);
+    @media (max-width: 900px) {
+      width: 350px;
+      left: 10px;
+    }
   }
 `;
 
@@ -19,13 +23,15 @@ export function ImageOfEducationFunc(url, alt) {
   
   const showImage = (event) => {
     let elem = event.target;
-    if (!elem.classList.contains("show")) {
+    let handler = () => {
+      elem.classList.remove("show");
+      document.removeEventListener("click", handler)
+    }
+    if (elem.tagName === "IMG" && !elem.classList.contains("show")) {
+      document.addEventListener("click", handler)
       elem.classList.add("show")
       return ;
     };
-    document.addEventListener("mousedown", () => {
-        elem.classList.remove("show")
-    })
     
   } 
     

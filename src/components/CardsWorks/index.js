@@ -18,13 +18,16 @@ function CardsWorks({ props }) {
   return (
     <WrapperOfCards>
       <HeaderTitle>
-        <h2>Title of cards</h2>
+        <h2>Мои работы</h2>
       </HeaderTitle>
       {props.map( (obj, i) => (
-        <CardOfProject key={i}>
-          <ImageOfCards props={obj} />
-          <Description props={obj} />        
-        </CardOfProject>
+        <React.Fragment key={i}>
+          <CardOfProject >
+            <ImageOfCards props={obj} />
+            <Description props={obj} /> 
+          </CardOfProject>
+          <div><hr/></div>
+        </React.Fragment>
       )).reverse()}
 
     </WrapperOfCards>

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Container,  Col, Image, Row } from 'react-bootstrap';
 
 import { StyledTextFunc } from '../StyledTextFunc';
-import father from '../../images/father.svg';
+import ildar from '../../images/Ildar.png';
 
 const StyledText = StyledTextFunc("black");
 
@@ -41,7 +41,7 @@ function Face() {
         </Col>
         <Col className="col-md-4 col-sm-12 " >
           <div className="img-container">
-            <Image src={father}  className="img-fluid rounded-circle mt-2"></Image>
+            <Image src={ildar}  className="img-fluid rounded-circle mt-2"></Image>
           </div>
         </Col>
         <Col className="col-md-4 col-sm-12">
