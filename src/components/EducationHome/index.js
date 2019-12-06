@@ -1,9 +1,13 @@
 import React from 'react';
+import styled from 'styled-components';
+
 import { StyledTextFunc } from '../StyledTextFunc';
 import sololearn from '../../images/sololearn.png';
 import { ImageOfEducationFunc } from './ImageOfEducation';
 
-const StyledText = StyledTextFunc("black");
+const StyledText = styled(StyledTextFunc("black"))`
+  padding-bottom: 50px;
+`;
 
 export function Education() {
   return (

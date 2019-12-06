@@ -2,10 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container,  Col, Image, Row } from 'react-bootstrap';
 
-import { StyledTextFunc } from '../StyledTextFunc';
 import ildar from '../../images/Ildar.png';
-
-const StyledText = StyledTextFunc("black");
 
 const StyledContainer = styled(Container)`
   
@@ -33,9 +30,7 @@ function Face() {
     <StyledContainer>
       <Row>
         <Col xs={12} className="align-self-center ">
-          <StyledText>
-            <p>Ильдар Насыров</p>
-          </StyledText>
+         
         </Col>
         <Col className="col-md-4 col-sm-12">
           <p className="lead text-center">Предлагаю услуги по разработке веб приложений на javascript. В своей работе использую современные технологии на основе React.</p>
