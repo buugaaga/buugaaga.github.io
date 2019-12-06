@@ -8,6 +8,7 @@ import ildar from '../../images/Ildar.png';
 const StyledText = StyledTextFunc("black");
 
 const StyledContainer = styled(Container)`
+  
   .row {
     flex-flow: row wrap;
     justify-content: center;

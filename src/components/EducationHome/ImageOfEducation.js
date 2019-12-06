@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import styled from 'styled-components';
 
+import { useReduceImage } from '../../hooks/useReduceImage';
 
-const StyledImage = styled.div`
-  img {
+export const StyledImage = styled.img.attrs(props => ({
+  src: props.url,
+  alt: props.alt
+}))` 
     width: 150px;
-  }
-  img.show {
+  &.show {
     position: absolute;
     top: -200px;
     width: 700px;
@@ -18,31 +20,29 @@ const StyledImage = styled.div`
   }
 `;
 
-export function ImageOfEducationFunc(url, alt) {
-  
-  
-  const showImage = (event) => {
-    let elem = event.target;
-    let handler = () => {
-      elem.classList.remove("show");
-      document.removeEventListener("click", handler)
-      document.removeEventListener("scroll", handler)
-      console.log("pup")
+
+export function ImageOfEducationFunc(props) {
+
+  const [ show, setShow ] = useState(false);
+
+  const node = useRef();
+  const currentScrollY = window.scrollY;
+  useReduceImage( () => {
+    if((currentScrollY !== window.scrollY)) {
+      node.current.classList.remove("show");
     }
-    if (elem.tagName === "IMG" && !elem.classList.contains("show")) {
-      document.addEventListener("click", handler)
-      document.addEventListener("scroll", handler)
-      elem.classList.add("show")
-      return ;
-    };
-    
-  } 
-    
+  });
+  const showImage = event => {
+    node.current.classList.add("show");
+    setShow(true);
+  }
+  
+  
   return (
-    <div onClick={showImage}>
-      <StyledImage>
-        <img src={url} alt={alt} />
-      </StyledImage>
-      </div>
+    <div >
+      <StyledImage onClick={showImage}  ref={node} url={props.url} alt={props.alt}/>
+    </div>
   )
 }
+
+

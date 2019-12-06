@@ -7,8 +7,8 @@ const StyledText = StyledTextFunc("black");
 
 export function Education() {
   return (
-    <div className="container">
-      <div className="row vh-100">
+    <div className="container" >
+      <div className="row">
         <div className="col-12">
           <StyledText>
             <p>Образование</p>
@@ -31,7 +31,7 @@ export function Education() {
             </li>
             <li>
               <h5>Сертефикат окончания курсов по javscript</h5>
-              {ImageOfEducationFunc(sololearn, "sololearn")}         
+              <ImageOfEducationFunc url={sololearn} alt={"sololearn"} />        
             </li>
             
           </ul>
