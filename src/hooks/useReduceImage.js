@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 const useReduceImage = ( handler) => {
   useEffect(() => {
     const listener = event => {
-      console.log(event.type)
       handler()
     }
     document.addEventListener("mousedown", listener);

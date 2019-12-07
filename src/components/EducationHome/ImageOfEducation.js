@@ -30,6 +30,7 @@ export function ImageOfEducationFunc(props) {
   useReduceImage( () => {
     if((currentScrollY !== window.scrollY)) {
       node.current.classList.remove("show");
+      console.log(show)
     }
   });
   const showImage = event => {
@@ -40,7 +41,7 @@ export function ImageOfEducationFunc(props) {
   
   return (
     <div >
-      <StyledImage onClick={showImage}  ref={node} url={props.url} alt={props.alt}/>
+      <StyledImage  onClick={showImage}  ref={node} url={props.url} alt={props.alt}/>
     </div>
   )
 }
