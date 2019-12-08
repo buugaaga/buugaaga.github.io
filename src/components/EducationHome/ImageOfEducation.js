@@ -20,7 +20,6 @@ export const StyledImage = styled.img.attrs(props => ({
   }
 `;
 
-
 export function ImageOfEducationFunc(props) {
 
   const [ show, setShow ] = useState(false);
@@ -28,9 +27,8 @@ export function ImageOfEducationFunc(props) {
   const node = useRef();
   const currentScrollY = window.scrollY;
   useReduceImage( () => {
-    if((currentScrollY !== window.scrollY)) {
+    if((currentScrollY !== window.scrollY) && show) {
       node.current.classList.remove("show");
-      console.log(show)
     }
   });
   const showImage = event => {

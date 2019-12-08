@@ -26,7 +26,7 @@ class App extends React.Component {
         <NavBar />
       </NavState>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" render={() => <Home language={this.state.language} />} />
           
         <Route path="/works" component={Works} />
           

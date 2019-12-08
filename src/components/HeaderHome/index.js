@@ -21,8 +21,8 @@ function Header() {
       <StyledContainer fluid md={12}>
         <StyledRow className="align-items-center  ">
           <Col >
-            <StyledText><p>Ильдар Насыров</p></StyledText>
-            <p className="text-center">javascript разработчик</p>
+            <StyledText><p><span className="ru">Ильдар Насыров</span></p></StyledText>
+            <p className="text-center"><span className="ru">javascript разработчик</span></p>
           </Col>
         </StyledRow>
       </StyledContainer>
