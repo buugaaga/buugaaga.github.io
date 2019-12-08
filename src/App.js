@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  // Link,
   Switch,
   Route
 } from 'react-router-dom';
@@ -13,6 +12,12 @@ import { NavBar } from './components/NavBar';
 import { NavState } from './context/navState';
 
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      language: true
+    }
+  }
 
   render() {
     return (
