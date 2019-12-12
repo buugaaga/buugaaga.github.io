@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { DataOfContacts } from '../components/DataOfContacts';
+import { DataOfContacts } from '../components/Contacts';
 
-export function Contacts() {
+export function Contacts({ language }) {
 
   return (
-    <DataOfContacts />
+    <DataOfContacts language={language} />
   )
 }

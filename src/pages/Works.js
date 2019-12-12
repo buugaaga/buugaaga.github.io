@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 
 import { CardsWorks } from "../components/CardsWorks";
-import { dataOfProjects as data } from '../dataOfProjects';
+import { dataOfProjects as data } from '../DataOfProjects/dataOfProjects';
 
 
 export class Works extends Component {
-  constructor() {
-    super();
-    this.state = {data};
-  }
+
+  
+  state = {data};
+  
   render() {
-    return <CardsWorks props={this.state.data}/>
+    return <CardsWorks data={this.state.data} language={this.props.language} />
   }
 }
 

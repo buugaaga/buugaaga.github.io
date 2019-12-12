@@ -5,6 +5,7 @@ import { ImageOfCards } from './ImageOfCards';
 import { HeaderTitle } from './HeaderTitle';
 import { CardOfProject } from './CardOfProject';
 import { Description } from './Description';
+import { SSpanRu, SSpanEn } from '../SSpan';
 
 
 const WrapperOfCards = styled.div`
@@ -13,18 +14,21 @@ const WrapperOfCards = styled.div`
   flex: wrap;
 `;
 
-function CardsWorks({ props }) {
-  console.log(props[0].urlOfImage)
+function CardsWorks({ data, language }) {
+
   return (
     <WrapperOfCards>
       <HeaderTitle>
-        <h2>Мои работы</h2>
+        <h2>
+          <SSpanRu ru={language}>Мои работы</SSpanRu>
+          <SSpanEn en={language}>My works</SSpanEn>
+        </h2>
       </HeaderTitle>
-      {props.map( (obj, i) => (
+      {data.map( (obj, i) => (
         <React.Fragment key={i}>
           <CardOfProject >
             <ImageOfCards props={obj} />
-            <Description props={obj} /> 
+            <Description obj={obj} language={language} /> 
           </CardOfProject>
           <div><hr/></div>
         </React.Fragment>

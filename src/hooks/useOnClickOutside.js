@@ -8,6 +8,7 @@ const useOnClickOutside = (ref, handler) => {
       }
       handler(event);
     };
+    
     document.addEventListener('mousedown', listener);
     document.addEventListener('scroll', listener);
     return () => {

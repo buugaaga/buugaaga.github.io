@@ -27,10 +27,10 @@ const StyledDescription = styled.div`
   
 `;
 
-export const Description = ({ props }) => (
+export const Description = ({ obj, language }) => (
   <StyledDescription>
-    <h3>{props.titleRu}</h3>
-    <p>{props.descriptionRu}</p>
-    <ButtonsOfCard props={props} />
+    <h3>{ language ? obj.titleRu : obj.titleEn }</h3>
+    <p>{language ? obj.descriptionRu : obj.descriptionEn }</p>
+    <ButtonsOfCard obj={obj} language={language} />
   </StyledDescription>
 )

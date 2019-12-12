@@ -30,8 +30,8 @@ function Header({language}) {
               </p>
             </StyledText>
             <p className="text-center">
-              <SSpanRu>javascript разработчик</SSpanRu>
-              <SSpanEn>javascript developer</SSpanEn>
+              <SSpanRu ru={language}>javascript разработчик</SSpanRu>
+              <SSpanEn en={language}>javascript developer</SSpanEn>
             </p>
           </Col>
         </StyledRow>

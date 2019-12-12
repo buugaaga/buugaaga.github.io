@@ -36,8 +36,10 @@ const StyledNav = styled.nav`
 export function NavBar({language}) {
   const { isMenuOpen, toggleMenuMode } = useContext(MenuContext);
   const node = useRef();
-  useOnClickOutside(node, () => {
-    if (isMenuOpen) toggleMenuMode()
+  useOnClickOutside(node, (event) => {
+    if (isMenuOpen && event.target.tagName !== "LABEL") {
+      toggleMenuMode()
+    }
   });
   return (   
     <StyledNav ref={node}>
