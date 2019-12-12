@@ -7,6 +7,7 @@ import { MenuContext } from '../../context/navState';
 import { useOnClickOutside } from '../../hooks/useOnClickOutside';
 import { HamburgerButton } from './HamburgerButton';
 import { LinksLogo } from './LinksLogo';
+import { SSpanRu, SSpanEn } from '../SSpan';
 
 const StyledNav = styled.nav`
   
@@ -32,7 +33,7 @@ const StyledNav = styled.nav`
   }
 `;
 
-export function NavBar() {
+export function NavBar({language}) {
   const { isMenuOpen, toggleMenuMode } = useContext(MenuContext);
   const node = useRef();
   useOnClickOutside(node, () => {
@@ -45,13 +46,22 @@ export function NavBar() {
         <div>
           <ul>
             <li>
-              <Link to="/">Домашняя страница</Link>
+              <Link to="/">
+                <SSpanRu ru={language}>Домашняя страница</SSpanRu>
+                <SSpanEn en={language}>Home page</SSpanEn>
+              </Link>
             </li>
             <li>
-              <Link to="/works">Мои работы</Link>
+              <Link to="/works">
+                <SSpanRu ru={language}>Мои работы</SSpanRu>
+                <SSpanEn en={language}>My works</SSpanEn>
+              </Link>
             </li>
             <li>
-              <Link to="/contacts">Связаться со мной</Link>
+              <Link to="/contacts">
+                <SSpanRu ru={language}>Связаться со мной</SSpanRu>
+                <SSpanEn en={language}>Contact with me</SSpanEn>
+              </Link>
             </li>
           </ul>
           <LinksLogo />

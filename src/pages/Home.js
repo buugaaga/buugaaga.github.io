@@ -5,7 +5,6 @@ import { Face } from '../components/FaceHome';
 import { Education } from '../components/EducationHome';
 
 export function Home(props) {
-  console.log(props)
   return (
     <>
       <Header language={props.language}/>
