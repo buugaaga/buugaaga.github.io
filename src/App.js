@@ -15,7 +15,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      language: true
+      language: false
     }
   }
 
@@ -28,9 +28,9 @@ class App extends React.Component {
       <Switch>
         <Route exact path="/" render={() => <Home language={this.state.language} />} />
           
-        <Route path="/works" component={Works} />
+    <Route path="/works" component={() => <Works  language={this.state.language} /> }/>
           
-        <Route path="/contacts" component={Contacts} />
+        <Route path="/contacts" component={() => <Contacts language={this.state.language} />} />
           
       </Switch>
     </>

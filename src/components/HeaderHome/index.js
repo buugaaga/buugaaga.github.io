@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import { StyledTextFunc } from '../StyledTextFunc';
 import Ural from '../../images/nature.png';
+import { SSpanRu, SSpanEn } from '../SSpan';
 
 const StyledText = StyledTextFunc("white");
 const StyledContainer = styled(Container)`
@@ -15,14 +16,23 @@ const StyledRow = styled(Row)`
   height: 100vh;
 `;
 
-function Header() {
+function Header({language}) {
+  
   return (
     <>
       <StyledContainer fluid md={12}>
         <StyledRow className="align-items-center  ">
           <Col >
-            <StyledText><p><span className="ru">Ильдар Насыров</span></p></StyledText>
-            <p className="text-center"><span className="ru">javascript разработчик</span></p>
+            <StyledText>
+              <p>
+                <SSpanRu ru={language}>Ильдар Насыров</SSpanRu> 
+                <SSpanEn en={language}>Eldar Nasyrov</SSpanEn>
+              </p>
+            </StyledText>
+            <p className="text-center">
+              <SSpanRu>javascript разработчик</SSpanRu>
+              <SSpanEn>javascript developer</SSpanEn>
+            </p>
           </Col>
         </StyledRow>
       </StyledContainer>

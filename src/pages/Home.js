@@ -8,9 +8,9 @@ export function Home(props) {
   console.log(props)
   return (
     <>
-      <Header />
-      <Face />
-      <Education />
+      <Header language={props.language}/>
+      <Face language={props.language}/>
+      <Education language={props.language}/>
     </>
   )
 }

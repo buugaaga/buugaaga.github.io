@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Container,  Col, Image, Row } from 'react-bootstrap';
 
 import ildar from '../../images/Ildar.png';
+import { SSpanRu, SSpanEn } from '../SSpan';
 
 const StyledContainer = styled(Container)`
   
@@ -25,7 +26,7 @@ const StyledContainer = styled(Container)`
   }
 `;
 
-function Face() {
+function Face({language}) {
   return (
     <StyledContainer>
       <Row>
@@ -33,7 +34,11 @@ function Face() {
          
         </Col>
         <Col className="col-md-4 col-sm-12">
-          <p className="lead text-center">Предлагаю услуги по разработке веб приложений на javascript. В своей работе использую современные технологии на основе React.</p>
+          <p className="lead text-center">
+            <SSpanRu ru={language}>Предлагаю услуги по разработке веб приложений на javascript. В своей работе использую современные технологии на основе React.</SSpanRu>
+            <SSpanEn en={language}>I offer services for developing web applications in javascript. In my work I use modern technologies based on React.</SSpanEn>
+          </p>
+            
         </Col>
         <Col className="col-md-4 col-sm-12 " >
           <div className="img-container">
@@ -41,7 +46,10 @@ function Face() {
           </div>
         </Col>
         <Col className="col-md-4 col-sm-12">
-          <p className="lead text-center">Качественное выполнение и уважительное отношение</p>
+          <p className="lead text-center">
+            <SSpanRu ru={language}>Качественное выполнение и уважительное отношение</SSpanRu>
+            <SSpanEn en={language}>Quality execution and respect</SSpanEn>
+          </p>
         </Col>
       </Row>
     </StyledContainer>

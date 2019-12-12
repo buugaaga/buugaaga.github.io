@@ -27,11 +27,11 @@ export function ImageOfEducationFunc(props) {
   const node = useRef();
   const currentScrollY = window.scrollY;
   useReduceImage( () => {
-    if((currentScrollY !== window.scrollY) && show) {
+    if(((currentScrollY !== window.scrollY)) && show) {
       node.current.classList.remove("show");
     }
   });
-  const showImage = event => {
+  const showImage = () => {
     node.current.classList.add("show");
     setShow(true);
   }

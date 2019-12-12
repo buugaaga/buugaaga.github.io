@@ -9,6 +9,7 @@ const StyledTextFunc = color => styled.h3`
   & p {
     display: inline-block;
     color: ${color};
+    letter-spacing: 4px;
     text-shadow: 3px 3px 4px grey ;
   }
   ::before {
