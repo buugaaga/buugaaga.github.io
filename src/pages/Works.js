@@ -1,16 +1,20 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 
-import { CardsWorks } from "../components/CardsWorks";
-import { dataOfProjects as data } from '../DataOfProjects/dataOfProjects';
+export const Works = () => {
 
-
-export class Works extends Component {
-
-  
-  state = {data};
-  
-  render() {
-    return <CardsWorks data={this.state.data} language={this.props.language} />
-  }
+  const [data, setData] = useState([
+    'hi',
+    'by',
+    'guy'
+  ])
+    return (
+      <div>
+        { data.map( (item, i) => (
+          <div key={i}>
+            {item}
+          </div>
+        )) }
+      </div>  
+    )
 }
 

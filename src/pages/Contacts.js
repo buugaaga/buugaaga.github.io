@@ -1,10 +1,14 @@
 import React from 'react';
 
-import { DataOfContacts } from '../components/Contacts';
+// import { DataOfContacts } from '../components/Contacts';
 
 export function Contacts({ language }) {
 
   return (
-    <DataOfContacts language={language} />
+    <div>
+      <h1>
+        Contacts
+      </h1>
+    </div>
   )
 }

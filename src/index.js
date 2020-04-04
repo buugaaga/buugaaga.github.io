@@ -1,16 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.css';
-import { HashRouter as Router } from 'react-router-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { HashRouter as Router } from 'react-router-dom'
+import { StylesProvider } from '@material-ui/styles'
 
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './index.css'
+import App from './App'
+import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
 <Router>
-  <App />
+  <StylesProvider injectFirst>
+    <App />
+  </StylesProvider>
 </Router>, 
 document.getElementById('root'));
 
-serviceWorker.unregister();
+serviceWorker.unregister()

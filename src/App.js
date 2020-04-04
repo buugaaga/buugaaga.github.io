@@ -1,50 +1,31 @@
-import React from 'react';
+import React, {useState} from 'react'
 import {
   Switch,
-  Route
-} from 'react-router-dom';
+  Route,
+  Link
+} from 'react-router-dom'
 
-import { Home } from './pages/Home';
-import { Works } from './pages/Works';
-import { Contacts } from './pages/Contacts';
+import Navigation from './components/Navigation'
+import { Home } from './pages/Home'
+import { Works } from './pages/Works'
+import { Contacts } from './pages/Contacts'
 
-import { NavBar } from './components/NavBar';
-import { NavState } from './context/navState';
-import { LanguageSwitch } from './components/LanguageSwitch';
 
-class App extends React.Component {
+const App = () => {
   
-  state = {
-      language: false
-    }
-  
-  handleSwitch = (event) => {
-    if(event.target.value === "ru") {
-      this.setState({
-        language: true
-      })
-      return;
-    }
-    this.setState({
-      language: false
-    })
-  }
+  const [ language, setLanguage] = useState(false)
 
-  render() {
-    return (
+  return (
     <>
-      <LanguageSwitch handleSwitch={this.handleSwitch} language={this.state.language} />
-      <NavState>
-        <NavBar language={this.state.language} />
-      </NavState>
+      <Navigation />
+      <Link to='works'>to works</Link>
+      <Link to='contacts'>to contacts</Link>
       <Switch>
-        <Route exact path="/" render={() => <Home language={this.state.language} />} />
-        <Route path="/works" component={() => <Works  language={this.state.language} /> }/>
-        <Route path="/contacts" component={() => <Contacts language={this.state.language} />} />
+        <Route exact path="/" render={() => <Home  />} />
+        <Route path="/works" component={() => <Works  /> }/>
+        <Route path="/contacts" component={() => <Contacts  />} />
       </Switch>
     </>
-    );
-  }
+  )
 }
-
-export default App;
+export default App

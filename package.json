@@ -4,14 +4,15 @@
   "private": true,
   "homepage": "https://buugaaga.github.io/",
   "dependencies": {
-    "bootstrap": "^4.3.1",
+    "@emotion/core": "^10.0.28",
+    "@material-ui/core": "^4.9.8",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.9.6",
     "gh-pages": "^2.1.1",
     "react": "^16.12.0",
-    "react-bootstrap": "^1.0.0-beta.15",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
-    "styled-components": "^4.4.1"
+    "react-scripts": "3.2.0"
   },
   "scripts": {
     "predeploy": "yarn run build",
