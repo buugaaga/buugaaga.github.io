@@ -1,8 +1,7 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {
   Switch,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
 
 import Navigation from './components/Navigation'
@@ -13,13 +12,11 @@ import { Contacts } from './pages/Contacts'
 
 const App = () => {
   
-  const [ language, setLanguage] = useState(false)
+  // const [ language, setLanguage] = useState(false)
 
   return (
     <>
       <Navigation />
-      <Link to='works'>to works</Link>
-      <Link to='contacts'>to contacts</Link>
       <Switch>
         <Route exact path="/" render={() => <Home  />} />
         <Route path="/works" component={() => <Works  /> }/>

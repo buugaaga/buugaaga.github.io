@@ -1,12 +1,8 @@
-import React, { useState } from 'react'
+import React  from 'react'
 
 export const Works = () => {
 
-  const [data, setData] = useState([
-    'hi',
-    'by',
-    'guy'
-  ])
+  const data = ['hi', 'by', 'guy']
     return (
       <div>
         { data.map( (item, i) => (

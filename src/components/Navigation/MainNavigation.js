@@ -6,7 +6,6 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText'
-import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import HomeIcon from '@material-ui/icons/Home'
 import WorkIcon from '@material-ui/icons/Work'
@@ -17,7 +16,7 @@ import GithubIcon from '@material-ui/icons/GitHub'
 import { Link } from 'react-router-dom';
 
 // import fccIcon from '../images/fcc.svg'
-import SvgIcon from '@material-ui/icons/MoveToInbox';
+
 
 
 export const MainNavigation = () => {
@@ -38,12 +37,10 @@ export const MainNavigation = () => {
   };
   const pages = ['home', 'works', 'contacts']
   const list = () => (
-    <div
-      role='representation'
-    >
+    <div>
       <List>
         {pages.map((text, index) => (
-          <ListItem button key={text}  component={Link} to={`/${pages[index]}`}>
+          <ListItem button key={text}  component={Link} to={`/${text === 'home' ? '' : pages[index]}`}>
             <ListItemIcon>
               { index  === 0 ? <HomeIcon /> : 
                 index  === 1 ? <WorkIcon /> :
