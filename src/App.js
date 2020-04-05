@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   Switch,
   Route
@@ -12,15 +12,15 @@ import { Contacts } from './pages/Contacts'
 
 const App = () => {
   
-  // const [ language, setLanguage] = useState(false)
+  const [ ru, setLanguage] = useState(false)
 
   return (
     <>
       <Navigation />
       <Switch>
-        <Route exact path="/" render={() => <Home  />} />
-        <Route path="/works" component={() => <Works  /> }/>
-        <Route path="/contacts" component={() => <Contacts  />} />
+        <Route exact path="/" render={() => <Home ru={ru} />} />
+        <Route path="/works" component={() => <Works ru={ru} /> }/>
+        <Route path="/contacts" component={() => <Contacts ru={ru} />} />
       </Switch>
     </>
   )

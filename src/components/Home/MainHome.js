@@ -6,13 +6,13 @@ import Container from '@material-ui/core/Container'
 
 import { First } from './First'
 
-export const MainHome = () => {
+export const MainHome = ({ru}) => {
   return (
     <Container 
       maxWidth={false}
       disableGutters
     >
-      <First />
+      <First ru={ru} />
     </Container>
   )
 }

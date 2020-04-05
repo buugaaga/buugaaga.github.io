@@ -1,13 +1,16 @@
 /** @jsx jsx */
 
-import { Grid } from '@material-ui/core'
+import { Grid, Typography } from '@material-ui/core'
 import { jsx, css } from '@emotion/core'
 import { useProgressiveImage } from '../../hooks/useProgressiveImage'
 
 import natureBg from '../../images/nature.png'
 import natureMinBg from '../../images/natureMin.png'
 
-export const First = () => {
+import enText from '../../translations/translations.json'
+import ruText from '../../translations/translations-ru.json'
+
+export const First = ({ru}) => {
 
   const [ src, placeholder ] = useProgressiveImage(natureBg, natureMinBg)
 
@@ -22,7 +25,14 @@ export const First = () => {
         background-repeat: no-repeat;
         background-size: cover;
       `}
+      justify='center'
+      alignItems='center'
     >
+      <Typography
+        variant='h4'
+      >
+        { ru ? ruText.homeFirst : enText.homeFirst }
+      </Typography>
       
     </Grid>
   )

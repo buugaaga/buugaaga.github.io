@@ -1,8 +1,11 @@
 import React  from 'react'
 
-export const Works = () => {
-
-  const data = ['hi', 'by', 'guy']
+export const Works = ({ ru }) => {
+  const data = []
+  if(!ru) {
+    data.push('hi')
+  }
+  
     return (
       <div>
         { data.map( (item, i) => (
