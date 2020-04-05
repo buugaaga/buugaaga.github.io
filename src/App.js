@@ -12,11 +12,11 @@ import { Contacts } from './pages/Contacts'
 
 const App = () => {
   
-  const [ ru, setLanguage] = useState(false)
+  const [ ru, setLanguage ] = useState(true)
 
   return (
     <>
-      <Navigation />
+      <Navigation setLanguage={setLanguage} ru={ru} />
       <Switch>
         <Route exact path="/" render={() => <Home ru={ru} />} />
         <Route path="/works" component={() => <Works ru={ru} /> }/>

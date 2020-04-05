@@ -14,12 +14,14 @@ import LinkedinIcon from '@material-ui/icons/LinkedIn'
 import TwitterIcon from '@material-ui/icons/Twitter'
 import GithubIcon from '@material-ui/icons/GitHub'
 import { Link } from 'react-router-dom';
+import { Grid } from '@material-ui/core';
+
+//components
+import { LanguageSwitch } from './LanguageSwitch'
 
 // import fccIcon from '../images/fcc.svg'
 
-
-
-export const MainNavigation = () => {
+export const MainNavigation = ({setLanguage, ru}) => {
  
   const [state, setState] = React.useState({
     top: false,
@@ -70,14 +72,18 @@ export const MainNavigation = () => {
 
   return (
     <div>
-      <>
+      <Grid
+        container
+        justify='space-between'
+      >
         <Button onClick={toggleDrawer('top', true)}>
           <MenuIcon />
         </Button>
+        <LanguageSwitch setLanguage={setLanguage} ru={ru} />
         <Drawer anchor={'top'} open={state['top']} onClose={toggleDrawer('top', false)}>
           {list()}
         </Drawer>
-      </>
+      </Grid>
     </div>
   );
 }
