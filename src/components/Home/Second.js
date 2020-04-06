@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
     borderRadius: '50%'
   },
   text: {
-    padding: theme.spacing(1)
+    padding: theme.spacing(2)
   }
   
 }))
@@ -29,14 +29,14 @@ export const Second = ({ text }) => {
       container
       justify='space-around'
       alignItems='center'
-      spacing={3}
+      
     >
-      <Grid item sm={4} container alignItems='center' >
+      <Grid item sm={4} container alignItems='center' className={classes.text}>
         <Typography
           variant='subtitle1'
           align='center'
         >
-          <p>{text.homeSecondLeft}</p>
+          {text.homeSecondLeft}
         </Typography>
       </Grid>
       <Grid item >
@@ -47,7 +47,7 @@ export const Second = ({ text }) => {
           title='ildar'
         />
       </Grid>
-      <Grid item sm={4} container alignItems='center'  >
+      <Grid item sm={4} container alignItems='center' justify='center' >
         <Typography
          variant='subtitle1'
          align='center'
