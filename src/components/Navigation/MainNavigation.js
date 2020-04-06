@@ -14,15 +14,25 @@ import LinkedinIcon from '@material-ui/icons/LinkedIn'
 import TwitterIcon from '@material-ui/icons/Twitter'
 import GithubIcon from '@material-ui/icons/GitHub'
 import { Link } from 'react-router-dom';
-import { Grid } from '@material-ui/core';
+import { AppBar, IconButton, Toolbar } from '@material-ui/core';
 
 //components
 import { LanguageSwitch } from './LanguageSwitch'
+import { makeStyles } from '@material-ui/styles';
 
 // import fccIcon from '../images/fcc.svg'
 
+const useStyle = makeStyles( (theme) => ({
+  between: {
+    justifyContent: 'space-between'
+  },
+  pallete: {
+    color: 'white'
+  }
+}))
+
 export const MainNavigation = ({setLanguage, ru}) => {
- 
+  const classes = useStyle()
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -71,19 +81,18 @@ export const MainNavigation = ({setLanguage, ru}) => {
   );
 
   return (
-    <div>
-      <Grid
-        container
-        justify='space-between'
-      >
-        <Button onClick={toggleDrawer('top', true)}>
-          <MenuIcon />
-        </Button>
-        <LanguageSwitch setLanguage={setLanguage} ru={ru} />
-        <Drawer anchor={'top'} open={state['top']} onClose={toggleDrawer('top', false)}>
-          {list()}
-        </Drawer>
-      </Grid>
-    </div>
+    
+      <AppBar position="static">
+        <Toolbar className={classes.between}>
+          <IconButton onClick={toggleDrawer('top', true) }  aria-label="menu" edge="start">
+            <MenuIcon className={classes.pallete} />
+          </IconButton>
+          <LanguageSwitch setLanguage={setLanguage} ru={ru} />
+          <Drawer anchor={'top'} open={state['top']} onClose={toggleDrawer('top', false)}>
+            {list()}
+          </Drawer>
+        </Toolbar>
+      </AppBar>
+    
   );
 }
