@@ -1,8 +1,8 @@
 import React from 'react'
 import MainHome from '../components/Home'
 
-export function Home({ru}) {
+export function Home({ru, text}) {
   return (
-    <MainHome ru={ru} />
+    <MainHome ru={ru} text={text} />
   )
 }
