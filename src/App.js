@@ -21,7 +21,7 @@ const App = () => {
     <>
       <Navigation setLanguage={setLanguage} ru={ru} />
       <Switch>
-        <Route exact path="/" component={() => <Home ru={ru} text={text} />} />
+        <Route exact path="/" component={() => <Home ru={ru} text={text.home} />} />
         <Route path="/works" component={() => <Works ru={ru} /> }/>
         <Route path="/contacts" component={() => <Contacts ru={ru}  />} />
       </Switch>

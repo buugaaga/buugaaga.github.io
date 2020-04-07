@@ -1,12 +1,14 @@
 {
-  "homeFirst": "El'dar Nasyrov",
-  "homeSecondLeft": "I offer services for developing web applications in javascript. In my work I use modern technologies based on React.",
-  "homeSecondRight": "Quality execution and respect",
-  "educationTitle": "Education",
-  "educationDiplomaDescription": "Engineer Bachelor of the Faculty of Architecture and Civil Engineering Year of study: 2008-2017",
-  "educationDiplomaTitle": "diploma of Orenburg State University",
-  "educationFCCDescription": "Developer certification representing approximately 300 hours of coursework",
-  "educationFCCTitle": "JavaScript Algorithms and Data Structures Certification",
-  "educationSololearnDescription": "good work",
-  "educationSololearnTitle": "Javascript course certificate"
+  "home": {
+    "first": "El'dar Nasyrov",
+    "secondLeft": "I offer services for developing web applications in javascript. In my work I use modern technologies based on React.",
+    "secondRight": "Quality execution and respect",
+    "educationTitle": "Education",
+    "educationDiplomaDescription": "Engineer Bachelor of the Faculty of Architecture and Civil Engineering Year of study: 2008-2017",
+    "educationDiplomaTitle": "Diploma of Orenburg State University",
+    "educationFCCDescription": "Developer certification representing approximately 300 hours of coursework",
+    "educationFCCTitle": "JavaScript Algorithms and Data Structures Certification",
+    "educationSololearnDescription": "good work",
+    "educationSololearnTitle": "Javascript course certificate"
+  }
 }

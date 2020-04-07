@@ -36,7 +36,7 @@ export const Second = ({ text }) => {
           variant='subtitle1'
           align='center'
         >
-          {text.homeSecondLeft}
+          {text.secondLeft}
         </Typography>
       </Grid>
       <Grid item >
@@ -52,7 +52,7 @@ export const Second = ({ text }) => {
          variant='subtitle1'
          align='center'
         >
-          {text.homeSecondRight}
+          {text.secondRight}
         </Typography>
       </Grid>
     </Grid>
