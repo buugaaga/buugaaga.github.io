@@ -15,7 +15,7 @@ export const MainHome = ({ru, text}) => {
       maxWidth={false}
       disableGutters
     >
-      <First ru={ru} />
+      <First text={text} />
       <Second  text={text} />
       <Education text={text} />
     </Container>

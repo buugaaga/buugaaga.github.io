@@ -10,7 +10,7 @@ import natureMinBg from '../../images/natureMin.png'
 import enText from '../../translations/translations.json'
 import ruText from '../../translations/translations-ru.json'
 
-export const First = ({ru}) => {
+export const First = ({text}) => {
 
   const [ src, placeholder ] = useProgressiveImage(natureBg, natureMinBg)
 
@@ -31,7 +31,7 @@ export const First = ({ru}) => {
       <Typography
         variant='h4'
       >
-        { ru ? ruText.homeFirst : enText.homeFirst }
+        { text.name }
       </Typography>
       
     </Grid>
