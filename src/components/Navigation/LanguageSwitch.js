@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
   switchBase: {
     padding: 1,
+   
     '& + $track': {
       backgroundImage: `url(${ukLogo})`,
       backgroundSize: 'cover',
@@ -27,24 +28,18 @@ const useStyles = makeStyles((theme) => ({
         backgroundImage: `url(${ruLogo})`,
         opacity: 1,
         border: 'none',
-      },
-    },
-    '& $focusVisible $thumb': {
-      color: '#52d869',
-      border: '6px solid #fff',
-    },
+      }
+    }
   },
   thumb: {
-    width: 24,
-    height: 24,
-    backgroundColor: theme.palette.common.white
+    width: 25,
+    height: 25,
+    backgroundColor: theme.palette.common.white,
   },
   track: {
     borderRadius: 26 / 2,
-    border: `1px solid ${theme.palette.grey[400]}`,
     backgroundColor: theme.palette.grey[50],
     opacity: 1,
-    // transition: theme.transitions.create(['background-color', 'border']),
   },
   checked: {},
   focusVisible: {},

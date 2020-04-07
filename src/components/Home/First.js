@@ -7,9 +7,6 @@ import { useProgressiveImage } from '../../hooks/useProgressiveImage'
 import natureBg from '../../images/nature.png'
 import natureMinBg from '../../images/natureMin.png'
 
-import enText from '../../translations/translations.json'
-import ruText from '../../translations/translations-ru.json'
-
 export const First = ({text}) => {
 
   const [ src, placeholder ] = useProgressiveImage(natureBg, natureMinBg)

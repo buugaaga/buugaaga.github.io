@@ -23,6 +23,9 @@ import { makeStyles } from '@material-ui/styles';
 // import fccIcon from '../images/fcc.svg'
 
 const useStyle = makeStyles( (theme) => ({
+  root: {
+    backgroundColor: '#4791db'
+  },
   between: {
     justifyContent: 'space-between'
   },
@@ -82,7 +85,7 @@ export const MainNavigation = ({setLanguage, ru}) => {
 
   return (
     
-      <AppBar position="static">
+      <AppBar  className={classes.root}>
         <Toolbar className={classes.between}>
           <IconButton onClick={toggleDrawer('top', true) }  aria-label="menu" edge="start">
             <MenuIcon className={classes.pallete} />
