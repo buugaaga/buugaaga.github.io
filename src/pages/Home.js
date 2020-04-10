@@ -1,15 +1,8 @@
 import React from 'react'
+import MainHome from '../components/Home'
 
-import { Header } from '../components/HeaderHome';
-import { Face } from '../components/FaceHome';
-import { Education } from '../components/EducationHome';
-
-export function Home(props) {
+export function Home({ru, text}) {
   return (
-    <>
-      <Header language={props.language}/>
-      <Face language={props.language}/>
-      <Education language={props.language}/>
-    </>
+    <MainHome ru={ru} text={text} />
   )
 }

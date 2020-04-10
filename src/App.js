@@ -1,50 +1,35 @@
-import React from 'react';
-import {
-  Switch,
-  Route
-} from 'react-router-dom';
+import React, { useState } from 'react'
+import { Switch, Route } from 'react-router-dom'
 
-import { Home } from './pages/Home';
-import { Works } from './pages/Works';
-import { Contacts } from './pages/Contacts';
+import Navigation from './components/Navigation'
+import { Home } from './pages/Home'
+import { Works } from './pages/Works'
+import { Contacts } from './pages/Contacts'
+import enText from './translations/translations.json'
+import ruText from './translations/translations-ru.json'
 
-import { NavBar } from './components/NavBar';
-import { NavState } from './context/navState';
-import { LanguageSwitch } from './components/LanguageSwitch';
 
-class App extends React.Component {
-  
-  state = {
-      language: false
-    }
-  
-  handleSwitch = (event) => {
-    if(event.target.value === "ru") {
-      this.setState({
-        language: true
-      })
-      return;
-    }
-    this.setState({
-      language: false
-    })
-  }
+const App = () => {
+  const [ru, setLanguage] = useState(true)
 
-  render() {
-    return (
+  let text = ru ? ruText : enText
+
+  return (
     <>
-      <LanguageSwitch handleSwitch={this.handleSwitch} language={this.state.language} />
-      <NavState>
-        <NavBar language={this.state.language} />
-      </NavState>
+      <Navigation setLanguage={setLanguage} ru={ru} />
       <Switch>
-        <Route exact path="/" render={() => <Home language={this.state.language} />} />
-        <Route path="/works" component={() => <Works  language={this.state.language} /> }/>
-        <Route path="/contacts" component={() => <Contacts language={this.state.language} />} />
+        <Route
+          exact
+          path='/'
+          component={() => <Home ru={ru} text={text.home} />}
+        />
+        <Route
+          path='/works'
+          component={() => <Works ru={ru} text={text.works} />}
+        />
+        <Route path='/contacts' component={() => <Contacts ru={ru} />} />
       </Switch>
     </>
-    );
-  }
+  )
 }
-
-export default App;
+export default App

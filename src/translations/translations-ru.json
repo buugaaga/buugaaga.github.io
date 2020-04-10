@@ -1,0 +1,26 @@
+{
+  "home": {
+    "name": "Ильдар Насыров",
+    "secondLeft": "Предлагаю услуги по разработке веб приложений на javascript. В своей работе использую современные технологии на основе React.",
+    "secondRight": "Качественное выполнение и уважительное отношение",
+    "educationTitle": "Образование",
+    "educationDiplomaDescription": "инженер бакалавр \"Архитектурно-строительного\" факультета год обучения: 2008-2017",
+    "educationDiplomaTitle": "Диплом Оренбургского Государственного университета",
+    "educationFCCDescription": "Сертификация разработчика, представляющая примерно 300 часов курсовой работы",
+    "educationFCCTitle": "JavaScript Algorithms and Data Structures Certification",
+    "educationSololearnDescription": "хорошая работа",
+    "educationSololearnTitle": "Сертефикат окончания курсов по javscript"
+  },
+  "works": {
+    "cards": [
+      {
+        "endDescription": "необходимые стили для написания",
+        "img": "drum-mashine.png",
+        "name": "Музыкальная машинка",
+        "startDescription": "Это итоговая пректная работа с FreeCodeCamp. В этой работе использовалась библиотека React и ...",
+        "toContinue": "читать дальше"
+      }
+    ],
+    "title": "Мои работы"
+  }
+}

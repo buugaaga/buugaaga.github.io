@@ -1,16 +1,10 @@
-import React, { Component } from 'react'
+import React  from 'react'
 
-import { CardsWorks } from "../components/CardsWorks";
-import { dataOfProjects as data } from '../DataOfProjects/dataOfProjects';
+import MainWorks from '../components/Works'
 
-
-export class Works extends Component {
-
-  
-  state = {data};
-  
-  render() {
-    return <CardsWorks data={this.state.data} language={this.props.language} />
-  }
+export const Works = ({ text }) => {  
+    return (
+      <MainWorks text={text} />
+    )
 }
 
