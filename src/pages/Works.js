@@ -1,19 +1,10 @@
 import React  from 'react'
 
-export const Works = ({ ru }) => {
-  const data = []
-  if(!ru) {
-    data.push('hi')
-  }
-  
+import MainWorks from '../components/Works'
+
+export const Works = ({ text }) => {  
     return (
-      <div>
-        { data.map( (item, i) => (
-          <div key={i}>
-            {item}
-          </div>
-        )) }
-      </div>  
+      <MainWorks text={text} />
     )
 }
 

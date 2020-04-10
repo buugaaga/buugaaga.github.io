@@ -10,5 +10,17 @@
     "educationFCCTitle": "JavaScript Algorithms and Data Structures Certification",
     "educationSololearnDescription": "хорошая работа",
     "educationSololearnTitle": "Сертефикат окончания курсов по javscript"
+  },
+  "works": {
+    "cards": [
+      {
+        "endDescription": "необходимые стили для написания",
+        "img": "drum-mashine.png",
+        "name": "Музыкальная машинка",
+        "startDescription": "Это итоговая пректная работа с FreeCodeCamp. В этой работе использовалась библиотека React и ...",
+        "toContinue": "читать дальше"
+      }
+    ],
+    "title": "Мои работы"
   }
 }
