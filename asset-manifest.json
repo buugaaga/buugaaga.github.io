@@ -1,34 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.29500457.chunk.css",
-    "main.js": "/static/js/main.2b413692.chunk.js",
-    "main.js.map": "/static/js/main.2b413692.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8896086d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8896086d.js.map",
-    "static/css/2.833dd627.chunk.css": "/static/css/2.833dd627.chunk.css",
-    "static/js/2.89d4f32a.chunk.js": "/static/js/2.89d4f32a.chunk.js",
-    "static/js/2.89d4f32a.chunk.js.map": "/static/js/2.89d4f32a.chunk.js.map",
+    "main.css": "/static/css/main.bbf7e30e.chunk.css",
+    "main.js": "/static/js/main.f4fc7e42.chunk.js",
+    "main.js.map": "/static/js/main.f4fc7e42.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.997c2578.js",
+    "runtime-main.js.map": "/static/js/runtime-main.997c2578.js.map",
+    "static/js/2.a5e80921.chunk.js": "/static/js/2.a5e80921.chunk.js",
+    "static/js/2.a5e80921.chunk.js.map": "/static/js/2.a5e80921.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e85e2a543e615a6e2c137af22757341e.js": "/precache-manifest.e85e2a543e615a6e2c137af22757341e.js",
+    "precache-manifest.b136763febb1ae464b265b7545753b35.js": "/precache-manifest.b136763febb1ae464b265b7545753b35.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.833dd627.chunk.css.map": "/static/css/2.833dd627.chunk.css.map",
-    "static/css/main.29500457.chunk.css.map": "/static/css/main.29500457.chunk.css.map",
+    "static/css/main.bbf7e30e.chunk.css.map": "/static/css/main.bbf7e30e.chunk.css.map",
     "static/media/Ildar.png": "/static/media/Ildar.f2aa4f24.png",
     "static/media/drum-mashine.png": "/static/media/drum-mashine.81041ed2.png",
-    "static/media/fcc.svg": "/static/media/fcc.095f71ed.svg",
-    "static/media/github.svg": "/static/media/github.76d344f0.svg",
-    "static/media/linkedin.svg": "/static/media/linkedin.4b475fb3.svg",
-    "static/media/markdown-previer.png": "/static/media/markdown-previer.cfc73abf.png",
     "static/media/nature.png": "/static/media/nature.79ac43b7.png",
-    "static/media/quote-mashine.png": "/static/media/quote-mashine.e5818fd8.png",
-    "static/media/sololearn.png": "/static/media/sololearn.7fcebc88.png",
-    "static/media/twitter.svg": "/static/media/twitter.a57ea219.svg"
+    "static/media/natureMin.png": "/static/media/natureMin.ad43bb4a.png",
+    "static/media/rus.svg": "/static/media/rus.0afd895d.svg",
+    "static/media/uk.svg": "/static/media/uk.cbb6e3d9.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8896086d.js",
-    "static/css/2.833dd627.chunk.css",
-    "static/js/2.89d4f32a.chunk.js",
-    "static/css/main.29500457.chunk.css",
-    "static/js/main.2b413692.chunk.js"
+    "static/js/runtime-main.997c2578.js",
+    "static/js/2.a5e80921.chunk.js",
+    "static/css/main.bbf7e30e.chunk.css",
+    "static/js/main.f4fc7e42.chunk.js"
   ]
 }
