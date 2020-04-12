@@ -22,5 +22,11 @@
       }
     ],
     "title": "My works"
+  },
+  "contacts": {
+    "title": "contacts with me",
+    "email": "you can to write me by email",
+    "tel": "or call me by tel",
+    "social": "also menu has link to "
   }
 }

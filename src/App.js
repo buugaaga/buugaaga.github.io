@@ -27,7 +27,7 @@ const App = () => {
           path='/works'
           component={() => <Works ru={ru} text={text.works} />}
         />
-        <Route path='/contacts' component={() => <Contacts ru={ru} />} />
+        <Route path='/contacts' component={() => <Contacts text={text.contacts} />} />
       </Switch>
     </>
   )

@@ -1,14 +1,12 @@
 import React from 'react';
 import MainContacts from '../components/Contacts';
 
-// import { DataOfContacts } from '../components/Contacts';
-
-export function Contacts({ ru }) {
+export function Contacts({ text}) {
 
   return (
     <div>
       <h1>
-        <MainContacts />
+        <MainContacts text={text} />
       </h1>
     </div>
   )
