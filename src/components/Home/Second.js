@@ -1,7 +1,8 @@
 import React from 'react'
-import { Grid, makeStyles, CardMedia, Typography,  } from '@material-ui/core'
+import { Grid, makeStyles, CardMedia, Typography, Button,  } from '@material-ui/core'
 
-import ildar from '../../images/Ildar.png'
+import ildar from '../../images/ildar.png'
+import resume from '../../docs/resume-ruMD.pdf'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -9,7 +10,7 @@ const useStyles = makeStyles(theme => ({
   },
   media: {
     maxHeight: 300,
-    maxWidth: 300,
+    maxWidth: 200,
     borderRadius: '50%'
   },
   text: {
@@ -54,6 +55,9 @@ export const Second = ({ text }) => {
         >
           {text.secondRight}
         </Typography>
+      </Grid>
+      <Grid item xs={12} > 
+    <Button href={resume} fullWidth download color='primary' variant='contained' >{text.secondResume}</Button>
       </Grid>
     </Grid>
   )
