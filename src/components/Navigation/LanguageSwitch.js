@@ -15,12 +15,17 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
   },
   switchBase: {
-    padding: 1,
+    padding: '0.1px',
    
     '& + $track': {
       backgroundImage: `url(${ukLogo})`,
       backgroundSize: 'cover',
+      opacity: 1,
+      border: 'none'
     },    
+    '&$hover': {
+      opacity: 0.1
+    },
     '&$checked': {
       transform: 'translateX(16px)',
       color: theme.palette.common.white,
@@ -32,17 +37,16 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   thumb: {
-    width: 25,
-    height: 25,
+    width: 26,
+    height: 26,
     backgroundColor: theme.palette.common.white,
   },
   track: {
-    borderRadius: 26 / 2,
+    borderRadius: 14,
     backgroundColor: theme.palette.grey[50],
     opacity: 1,
   },
-  checked: {},
-  focusVisible: {},
+  checked: {}
 }))
 
 export  function LanguageSwitch({ setLanguage, ru }) {
