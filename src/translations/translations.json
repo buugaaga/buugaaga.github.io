@@ -12,6 +12,11 @@
     "educationSololearnDescription": "good work",
     "educationSololearnTitle": "Javascript course certificate"
   },
+  "navigation": {
+    "home": "home",
+    "contacts": "contacts",
+    "works": "works"
+  },
   "works": {
     "cards": [
       {

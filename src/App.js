@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <>
-      <Navigation setLanguage={setLanguage} ru={ru} />
+      <Navigation setLanguage={setLanguage} ru={ru} text={text.navigation} />
       <Switch>
         <Route
           exact

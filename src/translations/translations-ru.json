@@ -12,6 +12,11 @@
     "educationSololearnDescription": "хорошая работа",
     "educationSololearnTitle": "Сертефикат окончания курсов по javscript"
   },
+  "navigation": {
+    "home": "на главную",
+    "contacts": "связаться со мной",
+    "works": "мои работы"
+  },
   "works": {
     "cards": [
       {
