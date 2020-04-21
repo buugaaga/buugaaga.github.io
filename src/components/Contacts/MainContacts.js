@@ -11,8 +11,9 @@ import {
 } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    marginTop: 10,
+  margin: {
+    marginTop: theme.spacing(3),
+    marginLeft: theme.spacing(2)
   },
 }))
 
@@ -25,17 +26,17 @@ export const MainContacts = ({ text }) => {
         <ListSubheader>
           <Typography variant='h3'>{text.title}</Typography>
         </ListSubheader>
-        <ListItem>
+        <ListItem className={classes.margin}>
           {text.email}
           <Link href='mailto:ildar.nasrov@gmail.com'>
             &nbsp;ildar.nasrov@gmail.com
           </Link>
         </ListItem>
-        <ListItem>
+        <ListItem className={classes.margin}>
           {text.tel}
           <Link href='tel:+79923437503'>&nbsp;+79923437503</Link>
         </ListItem>
-        <ListItem>
+        <ListItem className={classes.margin}>
           {text.social}
           <Link
             href='https://www.linkedin.com/in/eldar-nasyrov-a0391b177/'
